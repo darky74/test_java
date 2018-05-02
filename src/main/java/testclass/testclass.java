@@ -35,7 +35,7 @@ public class testclass {
 	private String prenom;
 	private String nom;
 	private String naissance;
-	private String level;
+	private int level;
 
 	/**
 	 * Entrée clavier standart (équivalent du prompt en JS)
@@ -102,7 +102,7 @@ public class testclass {
 			} else if (condition == '2') {
 
 				System.out.println("Modérateur classique: tapez1 \nModérateur avancé: tapez 2");
-				level = sc.nextLine();
+				level = sc.nextInt();
 				System.out.println("Veuillez entrer votre prénom: ");
 				prenom = sc.nextLine();
 				System.out.println("Veuillez entrer votre nom: ");
@@ -148,11 +148,11 @@ public class testclass {
 			System.out.println("Pour ajouter un ami: Tapez 5");
 			System.out.println("Pour afficher vos amis: Tapez 6");
 
-			if (condition == '2' && this.users[numUser - 1].getLevel().equals("1")
-					|| this.users[numUser - 1].getLevel().equals("2")) {
+			if (condition == '2' && this.users[numUser - 1].getLevel()==1
+					|| this.users[numUser - 1].getLevel()==2) {
 				System.out.println("pour supprimer un message: Tapez 7");
 
-				if (this.users[numUser - 1].getLevel().equals("2")) {
+				if (this.users[numUser - 1].getLevel()==2) {
 					System.out.println("pour supprimer un utilisateur: Tapez 8");
 				}
 			}

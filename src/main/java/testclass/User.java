@@ -2,7 +2,7 @@ package testclass;
 
 import java.time.DateTimeException;
 
-public class User {
+public class User extends Personne {
 	
 	/**
 	 * Déclaration des variables (attributs), leur type, leur portée
@@ -20,8 +20,8 @@ public class User {
 	
 	
 
-	public String getLevel() {
-		return "0";
+	public int getLevel() {
+		return 0;
 
 	}
 
