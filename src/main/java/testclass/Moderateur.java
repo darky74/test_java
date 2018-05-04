@@ -1,5 +1,7 @@
 package testclass;
 
+import java.util.ArrayList;
+
 public class Moderateur extends User implements Salary{
 	
 	private int level;
@@ -9,10 +11,10 @@ public class Moderateur extends User implements Salary{
 		
 	}
 	
-	public Moderateur(String prenom, String nom, String naissance, int level)
+	public Moderateur(String prenom, String nom, String naissance, int level, ArrayList friendList)
 			throws PrenomException, NomException, DateException
 	{
-		super(prenom, nom, naissance);
+		super(prenom, nom, naissance, friendList);
 		this.level = level;
 	}
 

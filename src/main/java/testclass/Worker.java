@@ -10,7 +10,7 @@ public class Worker extends Personne implements Salary {
 	protected boolean allerBosser;
 	
 	
-	public Worker(String prenom, String nom, String dateNaissance, int dureeContrat, int salaire) throws PrenomException, NomException 
+	public Worker(String prenom, String nom, String dateNaissance, int dureeContrat, int salaire) throws NomException, PrenomException 
 	{
 		this.setPrenom(prenom);
 		this.setNom(nom);
